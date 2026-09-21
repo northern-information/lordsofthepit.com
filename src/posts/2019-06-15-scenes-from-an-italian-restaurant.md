@@ -47,7 +47,7 @@ Nobody had advantage, though Moss paced the field at 56 life thanks to early wor
 
 The turn then passed to Shane, who launched a near-lethal assault on Marty, but twin Mazes of Ith (Marty’s + Carter’s) kept the ailing wizard afloat, albeit it at one life. Then, with his final act, Moss used a remaining Trike counter to deliver the ol’ slap-n-pop, the coup de grace, to Marty. Carter bulldozed Moss on the next turn and we were left with Meatball vs. Shane. The cagey veterans settled into a back-and-forth, Carter working a creature advantage. Shane then pulled his namesake Semmens Maneuver with Mirror Universe, followed by Hurricane for the win. The dust settled and the Jund wizard prevailed, capturing Game 2, his third such OS-EDH triumph.
 
-![*Snacks & Attacks**](/assets/images/2019/06/IMG-1142.jpg)
+![*Snacks & Attacks*](/assets/images/2019/06/IMG-1142.jpg)
 
 **Takeaways**
 

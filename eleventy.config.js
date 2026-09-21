@@ -5,9 +5,70 @@ export default function (eleventyConfig) {
   // Allow missing file extensions (like Jekyll)
   eleventyConfig.configureErrorReporting({ allowMissingExtensions: true })
 
-  // Add anchor IDs to headings
+  // Add anchor IDs to headings, and render image captions
   eleventyConfig.amendLibrary('md', (mdLib) => {
     mdLib.use(markdownItAnchor)
+
+    // Writers write a caption as italic alt text: ![*Caption*](/path.jpg).
+    // Kramdown showed this text under the image. markdown-it flattens the
+    // emphasis into the alt attribute, so the caption becomes invisible.
+    // The asterisks are gone by render time, so the alt string cannot match.
+    // Detect the emphasis in the token children instead.
+    const isCaptionedImage = (token) => {
+      const children = token.children || []
+      return (
+        children.length >= 2 &&
+        children[0].type === 'em_open' &&
+        children[children.length - 1].type === 'em_close'
+      )
+    }
+
+    const defaultImage = mdLib.renderer.rules.image
+    mdLib.renderer.rules.image = function (tokens, idx, options, env, self) {
+      const token = tokens[idx]
+      if (!isCaptionedImage(token)) {
+        return defaultImage(tokens, idx, options, env, self)
+      }
+
+      // Drop the wrapping emphasis, but keep any inline markup in the caption.
+      const children = token.children
+      const caption = self.renderInline(children.slice(1, -1), options, env)
+
+      // The figcaption carries the text, so an identical alt would make a
+      // screen reader announce the same words twice. The default renderer
+      // rebuilds alt from token.children, so empty the children to get
+      // alt="", then restore them.
+      token.children = []
+      const image = defaultImage(tokens, idx, options, env, self)
+      token.children = children
+
+      return `<figure>${image}<figcaption>${caption}</figcaption></figure>`
+    }
+
+    // A figure cannot go inside a paragraph. When a paragraph holds only a
+    // captioned image, hide the paragraph tags so the figure stands alone.
+    // An image among other text keeps its paragraph.
+    mdLib.core.ruler.push('unwrap_figure_paragraph', (state) => {
+      const tokens = state.tokens
+
+      for (let i = 0; i < tokens.length - 2; i++) {
+        if (
+          tokens[i].type !== 'paragraph_open' ||
+          tokens[i + 1].type !== 'inline' ||
+          tokens[i + 2].type !== 'paragraph_close'
+        ) {
+          continue
+        }
+
+        const children = tokens[i + 1].children || []
+        const images = children.filter((child) => child.type === 'image')
+        if (images.length !== 1 || images.length !== children.length) continue
+        if (!isCaptionedImage(images[0])) continue
+
+        tokens[i].hidden = true
+        tokens[i + 2].hidden = true
+      }
+    })
   })
 
   // Add RSS plugin

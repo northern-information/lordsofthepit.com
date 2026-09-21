@@ -1,84 +1,65 @@
 {% if pagination.pages.length > 1 %}
 <nav class="pagination" aria-label="Pagination Navigation">
   <div class="flex items-center justify-between mt-8 mb-8 gap-4">
-
     <!-- Previous Button -->
     <div class="pagination-prev">
       {% if pagination.href.previous %}
-        <a href="{{ pagination.href.previous }}" class="btn-primary">
-          &larr; Previous
-        </a>
+      <a href="{{ pagination.href.previous }}" class="btn-primary">
+        &larr; Previous
+      </a>
       {% else %}
-        <span class="btn-primary opacity-50 cursor-not-allowed">
-          &larr; Previous
-        </span>
+      <span class="btn-primary opacity-50 cursor-not-allowed">
+        &larr; Previous
+      </span>
       {% endif %}
     </div>
 
     <!-- Page Numbers -->
     <div class="pagination-numbers flex gap-2 flex-wrap justify-center">
-      {% assign currentPage = pagination.pageNumber | plus: 1 %}
-      {% assign totalPages = pagination.pages.length %}
-
-      {% for pageEntry in pagination.pages %}
-        {% assign pageNum = forloop.index %}
-
-        {% comment %} Always show first page {% endcomment %}
-        {% if pageNum == 1 %}
-          {% if currentPage == 1 %}
-            <span class="pagination-current">1</span>
-          {% else %}
-            <a href="/" class="pagination-link">1</a>
-          {% endif %}
-        {% endif %}
-
-        {% comment %} Show ellipsis after page 1 if needed {% endcomment %}
-        {% if pageNum == 2 and currentPage > 4 %}
-          <span class="pagination-ellipsis">...</span>
-        {% endif %}
-
-        {% comment %} Show pages around current page (±2 range) {% endcomment %}
-        {% assign lowerBound = currentPage | minus: 2 %}
-        {% assign upperBound = currentPage | plus: 2 %}
-        {% if pageNum > 1 and pageNum < totalPages and pageNum >= lowerBound and pageNum <= upperBound %}
-          {% if pageNum == currentPage %}
-            <span class="pagination-current">{{ pageNum }}</span>
-          {% else %}
-            <a href="/page/{{ pageNum }}/" class="pagination-link">{{ pageNum }}</a>
-          {% endif %}
-        {% endif %}
-
-        {% comment %} Show ellipsis before last page if needed {% endcomment %}
-        {% assign lastPageMinus1 = totalPages | minus: 1 %}
-        {% assign totalPagesMinus3 = totalPages | minus: 3 %}
-        {% if pageNum == lastPageMinus1 and currentPage < totalPagesMinus3 %}
-          <span class="pagination-ellipsis">...</span>
-        {% endif %}
-
-        {% comment %} Always show last page {% endcomment %}
-        {% if pageNum == totalPages %}
-          {% if currentPage == totalPages %}
-            <span class="pagination-current">{{ totalPages }}</span>
-          {% else %}
-            <a href="/page/{{ totalPages }}/" class="pagination-link">{{ totalPages }}</a>
-          {% endif %}
-        {% endif %}
-      {% endfor %}
+      {% assign currentPage = pagination.pageNumber | plus: 1 %} {% assign
+      totalPages = pagination.pages.length %} {% for pageEntry in
+      pagination.pages %} {% assign pageNum = forloop.index %} {% comment %}
+      Always show first page {% endcomment %} {% if pageNum == 1 %} {% if
+      currentPage == 1 %}
+      <span class="pagination-current">1</span>
+      {% else %}
+      <a href="/" class="pagination-link">1</a>
+      {% endif %} {% endif %} {% comment %} Show ellipsis after page 1 if needed
+      {% endcomment %} {% if pageNum == 2 and currentPage > 4 %}
+      <span class="pagination-ellipsis">...</span>
+      {% endif %} {% comment %} Show pages around current page (±2 range) {%
+      endcomment %} {% assign lowerBound = currentPage | minus: 2 %} {% assign
+      upperBound = currentPage | plus: 2 %} {% if pageNum > 1 and pageNum <
+      totalPages and pageNum >= lowerBound and pageNum <= upperBound %} {% if
+      pageNum == currentPage %}
+      <span class="pagination-current">{{ pageNum }}</span>
+      {% else %}
+      <a href="/page/{{ pageNum }}/" class="pagination-link">{{ pageNum }}</a>
+      {% endif %} {% endif %} {% comment %} Show ellipsis before last page if
+      needed {% endcomment %} {% assign lastPageMinus1 = totalPages | minus: 1
+      %} {% assign totalPagesMinus3 = totalPages | minus: 3 %} {% if pageNum ==
+      lastPageMinus1 and currentPage < totalPagesMinus3 %}
+      <span class="pagination-ellipsis">...</span>
+      {% endif %} {% comment %} Always show last page {% endcomment %} {% if
+      pageNum == totalPages %} {% if currentPage == totalPages %}
+      <span class="pagination-current">{{ totalPages }}</span>
+      {% else %}
+      <a href="/page/{{ totalPages }}/" class="pagination-link"
+        >{{ totalPages }}</a
+      >
+      {% endif %} {% endif %} {% endfor %}
     </div>
 
     <!-- Next Button -->
     <div class="pagination-next">
       {% if pagination.href.next %}
-        <a href="{{ pagination.href.next }}" class="btn-primary">
-          Next &rarr;
-        </a>
+      <a href="{{ pagination.href.next }}" class="btn-primary"> Next &rarr; </a>
       {% else %}
-        <span class="btn-primary opacity-50 cursor-not-allowed">
-          Next &rarr;
-        </span>
+      <span class="btn-primary opacity-50 cursor-not-allowed">
+        Next &rarr;
+      </span>
       {% endif %}
     </div>
-
   </div>
 </nav>
 {% endif %}
