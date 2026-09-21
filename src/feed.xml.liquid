@@ -13,7 +13,8 @@ eleventyExcludeFromCollections: true
   <author>
     <name>Lords of the Pit</name>
   </author>
-  {% for post in collections.posts | limit: 20 %}
+  {% assign recent = collections.posts | limit: 20 %}
+  {% for post in recent %}
   <entry>
     <title>{{ post.data.title | escape }}</title>
     <link href="{{ site.url }}{{ post.url }}"/>
