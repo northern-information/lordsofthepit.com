@@ -7,6 +7,7 @@ This file provides context for Claude Code when working on this project.
 Lords of the Pit is a static website for a Chicago-based Old School Magic: the Gathering club. The site features blog posts, event coverage, a podcast archive, and historical MTG documents.
 
 **Target Audience:**
+
 - Content writers (non-technical) who write blog posts
 - Developers maintaining the site infrastructure
 - Community members reading content

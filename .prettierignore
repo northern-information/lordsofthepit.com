@@ -9,8 +9,16 @@ node_modules
 src/assets/images
 src/assets/stylesheets/style.css
 
-# Liquid templates with complex syntax
+# Liquid templates with complex syntax. The Liquid plugin cannot parse a tag
+# pair that opens and closes inside separate Liquid conditionals.
 src/includes/aside.html
 src/includes/head.html
+src/includes/header.html
 src/includes/javascript.html
-src/includes/layouts/arcanaeum.html
+src/layouts/arcanaeum.html
+src/layouts/archives.html
+src/layouts/home.html
+
+# An XML template. The Liquid plugin reads .liquid as HTML and stops at the
+# XML declaration.
+src/feed.xml.liquid

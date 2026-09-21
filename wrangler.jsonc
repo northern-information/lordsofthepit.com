@@ -5,16 +5,16 @@
   "assets": {
     "directory": "./dist",
     "not_found_handling": "404-page",
-    "html_handling": "auto-trailing-slash"
+    "html_handling": "auto-trailing-slash",
   },
   "observability": {
-    "enabled": true
+    "enabled": true,
   },
   "workers_dev": true,
   "routes": [
     {
       "pattern": "lordsofthepit.com/*",
-      "zone_name": "lordsofthepit.com"
-    }
-  ]
+      "zone_name": "lordsofthepit.com",
+    },
+  ],
 }

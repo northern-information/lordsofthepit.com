@@ -23,73 +23,73 @@ Five intense rounds of EC 93/94 were played with a diverse and unlikely selectio
 **Deck Lists**
 
 ![Oliver - 4c Atog](/assets/images/southside-party/image41.jpg)
-*Oliver - 4c Atog*
+_Oliver - 4c Atog_
 
 ![Lorien - UW Esper](/assets/images/southside-party/image14.jpg)
-*Lorien - UW Esper*
+_Lorien - UW Esper_
 
 ![Piquardo - RUG](/assets/images/southside-party/image27.jpg)
-*Piquardo - RUG*
+_Piquardo - RUG_
 
 ![Matt - DaboTig/DibaTog](/assets/images/southside-party/image22.jpg)
-*Matt - DaboTig/DibaTog*
+_Matt - DaboTig/DibaTog_
 
 ![Adam - Story Time](/assets/images/southside-party/image12.jpg)
-*Adam - Story Time*
+_Adam - Story Time_
 
 ![Enrique - UBR Sol'kanar](/assets/images/southside-party/image8.jpg)
-*Enrique - UBR Sol'kanar*
+_Enrique - UBR Sol'kanar_
 
 ![Shane - "The Special"](/assets/images/southside-party/image20.jpg)
-*Shane - "The Special"*
+_Shane - "The Special"_
 
 ![Carter - Ssssssssstasis](/assets/images/southside-party/image38.jpg)
-*Carter - Ssssssssstasis*
+_Carter - Ssssssssstasis_
 
 ![Moss - Atog](/assets/images/southside-party/image37.jpg)
-*Moss - Atog*
+_Moss - Atog_
 
 ![Rob - Mono Green wif da bifh](/assets/images/southside-party/image1.jpg)
-*Rob - Mono Green wif da bifh*
+_Rob - Mono Green wif da bifh_
 
 ![Brie - Shahrazad Story Time](/assets/images/southside-party/image32.jpg)
-*Brie - Shahrazad Story Time*
+_Brie - Shahrazad Story Time_
 
 ![Ben - Dreams Combo + Creatures](/assets/images/southside-party/image23.jpg)
-*Ben - Dreams Combo + Creatures*
+_Ben - Dreams Combo + Creatures_
 
 ![Rohr - Titania's Prison](/assets/images/southside-party/image26.jpg)
-*Rohr - Titania's Prison*
+_Rohr - Titania's Prison_
 
 ![Andy Mac - UW Flyers](/assets/images/southside-party/image6.jpg)
-*Andy Mac - UW Flyers*
+_Andy Mac - UW Flyers_
 
 ![Sanders - BU Harsh Times on the Southside](/assets/images/southside-party/image11.jpg)
-*Sanders - BU Harsh Times on the Southside*
+_Sanders - BU Harsh Times on the Southside_
 
 ![Keenan - 5c Dreams combo](/assets/images/southside-party/image10.png)
-*Keenan - 5c Dreams combo*
+_Keenan - 5c Dreams combo_
 
 ![Joe C. - Thallid Salad](/assets/images/southside-party/image17.jpg)
-*Joe C. - Thallid Salad*
+_Joe C. - Thallid Salad_
 
 ![David V. - 4c Aggro](/assets/images/southside-party/image2.jpg)
-*David V. - 4c Aggro*
+_David V. - 4c Aggro_
 
 ![Cousin Gus - "OGombie"](/assets/images/southside-party/image19.jpg)
-*Cousin Gus - "OGombie"*
+_Cousin Gus - "OGombie"_
 
 ![Dave - Livin' Plane (L-I-V-I-N)](/assets/images/southside-party/image21.jpg)
-*Dave - Livin' Plane (L-I-V-I-N)*
+_Dave - Livin' Plane (L-I-V-I-N)_
 
 ![Caleb - Dead Guy Ale](/assets/images/southside-party/image9.jpg)
-*Caleb - Dead Guy Ale*
+_Caleb - Dead Guy Ale_
 
 ![Miguel - Mono Black](/assets/images/southside-party/image16.jpg)
-*Miguel - Mono Black*
+_Miguel - Mono Black_
 
 ![JP - Mono Green](/assets/images/southside-party/image39.jpg)
-*JP - Mono Green*
+_JP - Mono Green_
 
 **HOT ACTION**
 
