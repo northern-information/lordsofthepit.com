@@ -127,7 +127,7 @@ I'm excited to explore the next iteration of the '95 metagame and I certainly do
 
 ![*Rohr w/Necroglare*](/assets/images/2019/10/ROAR.jpg)
 
-![*Most Creative**](/assets/images/2019/10/Bob-steals-Most-Creative-from-Butzen.jpg)
+![*Most Creative*](/assets/images/2019/10/Bob-steals-Most-Creative-from-Butzen.jpg)
 
 ![](/assets/images/2019/10/Ballers.jpg)
 

@@ -1,4 +1,4 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @theme {
   --color-black: #000000;
@@ -6,6 +6,7 @@
   --color-red: #ff0000;
   --color-dark-red: #830000;
   --color-faded: #454545;
+  --color-caption: #686868;
 
   --spacing-xs: 5px;
   --spacing-sm: 10px;
@@ -124,6 +125,12 @@
     @apply text-base text-faded italic;
   }
 
+  figure figcaption {
+    @apply text-base italic text-center;
+    color: var(--color-caption);
+    margin-top: 0.25rem;
+  }
+
   .post-mono p,
   .post-mono code,
   .post-mono pre {
@@ -142,8 +149,13 @@
     @apply text-right;
   }
 
-  article p img {
+  article p img,
+  article figure img {
     @apply mx-auto block;
+  }
+
+  article figure {
+    margin-bottom: 1rem;
   }
 
   article {

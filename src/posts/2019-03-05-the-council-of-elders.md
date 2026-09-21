@@ -42,7 +42,7 @@ Smoke cleared, garbage went out, and dishes were put away... so what was our les
 
 _On our OS-EDH page you can find downloadable versions of our wedge Elder Dragon Legends to try with your own playgroup._
 
-![*Tunes*](/assets/images/2019/03/tunes.png)]
+![*Tunes*](/assets/images/2019/03/tunes.png)
 
 ![*Sick Brain Dude*](/assets/images/2019/03/ettersboard.jpg)
 
