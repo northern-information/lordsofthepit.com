@@ -6,6 +6,8 @@ date: 2026-10-23
 category: Blog
 ---
 
+![](/assets/images/banners/thrash-bash-5.jpg)
+
 On October 17, 2026 mages from all across the midwest once again gathered in South Bend, Indiana for the fifth annual Midwest Thrash Bash. Since the [untimely closing](https://www.wndu.com/2026/01/06/tippecanoe-place-restaurant-closes-after-46-years-south-bend/) of Tippecanoe Place, Thrash Bash’s home since 2022, this year’s tournament took place in the War Room at the [Crooked Ewe Brewery and Ale House](https://crookedewe.com).
 
 ![The War Room at the Crooked Ewe](/assets/images/thrash-bash-5/crooked-ewe-war-room.jpg)
