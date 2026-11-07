@@ -8,12 +8,12 @@
     "pretty": "prettier --write ."
   },
   "devDependencies": {
-    "@11ty/eleventy": "^3.1.2",
-    "@11ty/eleventy-plugin-rss": "^2.0.4",
-    "@shopify/prettier-plugin-liquid": "^1.10.0",
-    "@tailwindcss/cli": "^4.1.18",
-    "concurrently": "^10.0.3",
-    "markdown-it-anchor": "^9.2.0",
-    "prettier": "^3.8.1"
+    "@11ty/eleventy": "3.1.8",
+    "@11ty/eleventy-plugin-rss": "3.1.0",
+    "@shopify/prettier-plugin-liquid": "1.11.4",
+    "@tailwindcss/cli": "4.3.5",
+    "concurrently": "10.0.6",
+    "markdown-it-anchor": "10.1.0",
+    "prettier": "3.9.10"
   }
 }
